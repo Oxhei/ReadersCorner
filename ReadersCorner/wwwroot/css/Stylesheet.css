@@ -1,7 +1,9 @@
-﻿body {
+﻿<link rel="Index" href="Index.cshtml" >
+
+body {
     margin: 0;
     padding: 0;
-    width: 100%;
+    width: 100px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -10,7 +12,7 @@
 
 .slider {
     margin: 0 auto;
-    width: 800px;
+    width: 200px;
     height: 400px;
     overflow: hidden;
 }
@@ -44,7 +46,7 @@
 }
 
 .manual-btn{
-//    border: 2px solid #fff;
+    border: 2px solid white;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -56,7 +58,7 @@
 }
 
 .manual-btn:hover{
- //   background-color: 
+background-color: white
 }
 
 #radio1:checked ~ .fisrt {

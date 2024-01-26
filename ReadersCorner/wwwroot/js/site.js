@@ -1,4 +1,15 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
+﻿let count = 1;
+document.getElementById('radio1').checked = true;
 
-// Write your JavaScript code.
+setInterval(funtion(){
+    nextimage();
+
+}, 3000)
+
+function nextImage() {
+    count++;
+    if (count > 4) {
+        count = 1;
+    }
+    document.getElementById('radio+count').checked = true;
+}

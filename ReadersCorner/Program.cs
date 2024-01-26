@@ -1,4 +1,8 @@
+using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
+var connectionString = builder.Configuration.GetConnectionString("RCAccountContextConnection") ?? throw new InvalidOperationException("Connection string 'RCAccountContextConnection' not found.");
 
 // Add services to the container.
 builder.Services.AddRazorPages();
@@ -17,6 +21,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();;
 
 app.UseAuthorization();
 

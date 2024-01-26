@@ -1,11 +1,15 @@
-using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ReadersCorner.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 var connectionString = builder.Configuration.GetConnectionString("RCAccountContextConnection") ?? throw new InvalidOperationException("Connection string 'RCAccountContextConnection' not found.");
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+builder.Services.AddDbContext<ReadersCornerContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ReadersCornerContext") ?? throw new InvalidOperationException("Connection string 'ReadersCornerContext' not found.")));
 
 var app = builder.Build();
 

@@ -8,50 +8,32 @@
 <html lang="en"
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="javascript" href="site.js">
-    <title>Image Carousel</title>
 </head>
 
 <body>
-    <div class="slider">
-        <div class="slides">
 
-            <!--buttons-->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-            <input type="radio" name="radio-btn" id="radio5">
-
-            <!--Slide images-->
-            <div class="slide first">
-                <img src="/Images/Slide1.jpeg" alt="imagem 01" />
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/Images/Slide1.jpeg" class="d-block w-100" alt="Slide 1">
             </div>
-            <div class="slide first">
-                <img src="/Images/Slide2.jpeg" alt="imagem 02" />
+            <div class="carousel-item">
+                <img src="/Images/Slide2.jpg" class="d-block w-100" alt="Slide 2">
             </div>
-            <div class="Slide first">
-                <img src="/Images/Slide3.jpeg" alt="imagem 01" />
+            <div class="carousel-item">
+                <img src="/Images/Slide3.jpg" class="d-block w-100" alt="Slide 3">
             </div>
-            <div class="Slide first">
-                <img src="/Images/Slide4.jpeg" alt="imagem 02" />
+            <div class="carousel-item">
+                <img src="/Images/Slide4.jpg" class="d-block w-100" alt="Slide 4">
             </div>
-            <div class="Slide first">
-                <img src="/Image/Slide5.jpeg" alt="imagem 01" />
+            <div class="carousel-item">
+                <img src="/Images/Slide5.jpg" class="d-block w-100" alt="Slide 5">
             </div>
-        </div>
-
-            <!--manual-navigation-->
-        <div class="manual-navigation">
-            <label for="radio1" class="manual-btn"></label>
-            <labe2 for="radio2" class="manual-btn"></labe2>
-            <labe3 for="radio3" class="manual-btn"></labe3>
-            <labe4 for="radio4" class="manual-btn"></labe4>
-            <labe5 for="radio5" class="manual-btn"></labe5>
         </div>
     </div>
-  <script src="site.js"></script>
+
 </body>
+
 </html>

@@ -13,3 +13,10 @@ function nextImage() {
     }
     document.getElementById('radio+count').checked = true;
 }
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Initialize the carousel
+        var myCarousel = new bootstrap.Carousel(document.getElementById('imageCarousel'));
+    });
+</script>

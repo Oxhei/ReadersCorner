@@ -5,7 +5,7 @@
 }
 <!DOCTYPE html>
 <link rel="stylesheet.css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8sh+WyW8oubcY//X4lZ+ePnhaw2RSRHzW1Izof" crossorigin="anonymous">
-<html lang="en"
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -33,12 +33,40 @@
             </div>
         </div>
     </div>
-</body>
 
-<body>
 
     <h2>Trending Reads</h2>
 
 </body>
+
+<style>
+    /* Ensure the carousel stretches to full width */
+    #imageCarousel {
+        width: 100%;
+        max-width: 100%;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Example shadow - adjust as needed */
+    }
+
+        /* Ensure the images within the carousel stretch properly */
+        #imageCarousel .carousel-item img {
+            width: 100%;
+            height: 600px; /* Fixed height as specified */
+        }
+
+    /* Additional styling, if necessary, to ensure the carousel fits well within your page layout */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Ensure that the carousel's parent elements do not restrict its size */
+    /* You might need to adjust or add selectors based on your page's structure */
+    .container, .container-fluid, .row, .col {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+</style>
 
 </html>

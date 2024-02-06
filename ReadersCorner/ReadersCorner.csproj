@@ -19,6 +19,10 @@
 
   <ItemGroup>
     <Folder Include="wwwroot\Images\" />
+    <Folder Include="Pages\Login\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Pages\Login\" />
+  </ItemGroup>
 </Project>
